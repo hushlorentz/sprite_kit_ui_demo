@@ -16,6 +16,14 @@
 		4E6036041B4B7C3100F5F4EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6036031B4B7C3100F5F4EB /* Images.xcassets */; };
 		4E6036071B4B7C3100F5F4EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6036051B4B7C3100F5F4EB /* LaunchScreen.xib */; };
 		4E6036131B4B7C3100F5F4EB /* SpriteKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6036121B4B7C3100F5F4EB /* SpriteKitDemoTests.m */; };
+		4E6036241B4B7C7600F5F4EB /* MathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E60361D1B4B7C7600F5F4EB /* MathUtils.m */; };
+		4E6036251B4B7C7600F5F4EB /* SpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E60361F1B4B7C7600F5F4EB /* SpriteButton.m */; };
+		4E6036261B4B7C7600F5F4EB /* SpriteSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6036211B4B7C7600F5F4EB /* SpriteSlider.m */; };
+		4E6036271B4B7C7600F5F4EB /* SpriteSliderSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6036231B4B7C7600F5F4EB /* SpriteSliderSelector.m */; };
+		4E60362C1B4B7CAF00F5F4EB /* hello_button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E6036281B4B7CAF00F5F4EB /* hello_button_selected.png */; };
+		4E60362D1B4B7CAF00F5F4EB /* hello_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E6036291B4B7CAF00F5F4EB /* hello_button.png */; };
+		4E60362E1B4B7CAF00F5F4EB /* slider_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E60362A1B4B7CAF00F5F4EB /* slider_bar.png */; };
+		4E60362F1B4B7CAF00F5F4EB /* slider_selector.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E60362B1B4B7CAF00F5F4EB /* slider_selector.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,18 @@
 		4E60360C1B4B7C3100F5F4EB /* SpriteKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6036111B4B7C3100F5F4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E6036121B4B7C3100F5F4EB /* SpriteKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitDemoTests.m; sourceTree = "<group>"; };
+		4E60361C1B4B7C7600F5F4EB /* MathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtils.h; sourceTree = "<group>"; };
+		4E60361D1B4B7C7600F5F4EB /* MathUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathUtils.m; sourceTree = "<group>"; };
+		4E60361E1B4B7C7600F5F4EB /* SpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteButton.h; sourceTree = "<group>"; };
+		4E60361F1B4B7C7600F5F4EB /* SpriteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteButton.m; sourceTree = "<group>"; };
+		4E6036201B4B7C7600F5F4EB /* SpriteSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteSlider.h; sourceTree = "<group>"; };
+		4E6036211B4B7C7600F5F4EB /* SpriteSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteSlider.m; sourceTree = "<group>"; };
+		4E6036221B4B7C7600F5F4EB /* SpriteSliderSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteSliderSelector.h; sourceTree = "<group>"; };
+		4E6036231B4B7C7600F5F4EB /* SpriteSliderSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteSliderSelector.m; sourceTree = "<group>"; };
+		4E6036281B4B7CAF00F5F4EB /* hello_button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hello_button_selected.png; path = assets/hello_button_selected.png; sourceTree = "<group>"; };
+		4E6036291B4B7CAF00F5F4EB /* hello_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hello_button.png; path = assets/hello_button.png; sourceTree = "<group>"; };
+		4E60362A1B4B7CAF00F5F4EB /* slider_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider_bar.png; path = assets/slider_bar.png; sourceTree = "<group>"; };
+		4E60362B1B4B7CAF00F5F4EB /* slider_selector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider_selector.png; path = assets/slider_selector.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +106,9 @@
 		4E6035F01B4B7C3100F5F4EB /* SpriteKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4E6036321B4B7CDD00F5F4EB /* Models */,
+				4E6036311B4B7CD100F5F4EB /* Utils */,
+				4E6036301B4B7CBC00F5F4EB /* Images */,
 				4E6035F51B4B7C3100F5F4EB /* AppDelegate.h */,
 				4E6035F61B4B7C3100F5F4EB /* AppDelegate.m */,
 				4E6035F81B4B7C3100F5F4EB /* GameScene.h */,
@@ -125,6 +148,39 @@
 				4E6036111B4B7C3100F5F4EB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E6036301B4B7CBC00F5F4EB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4E6036281B4B7CAF00F5F4EB /* hello_button_selected.png */,
+				4E6036291B4B7CAF00F5F4EB /* hello_button.png */,
+				4E60362A1B4B7CAF00F5F4EB /* slider_bar.png */,
+				4E60362B1B4B7CAF00F5F4EB /* slider_selector.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4E6036311B4B7CD100F5F4EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4E60361C1B4B7C7600F5F4EB /* MathUtils.h */,
+				4E60361D1B4B7C7600F5F4EB /* MathUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		4E6036321B4B7CDD00F5F4EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E60361E1B4B7C7600F5F4EB /* SpriteButton.h */,
+				4E60361F1B4B7C7600F5F4EB /* SpriteButton.m */,
+				4E6036201B4B7C7600F5F4EB /* SpriteSlider.h */,
+				4E6036211B4B7C7600F5F4EB /* SpriteSlider.m */,
+				4E6036221B4B7C7600F5F4EB /* SpriteSliderSelector.h */,
+				4E6036231B4B7C7600F5F4EB /* SpriteSliderSelector.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,10 +263,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E60362E1B4B7CAF00F5F4EB /* slider_bar.png in Resources */,
+				4E60362F1B4B7CAF00F5F4EB /* slider_selector.png in Resources */,
+				4E60362D1B4B7CAF00F5F4EB /* hello_button.png in Resources */,
 				4E6036071B4B7C3100F5F4EB /* LaunchScreen.xib in Resources */,
 				4E6036041B4B7C3100F5F4EB /* Images.xcassets in Resources */,
 				4E6035FC1B4B7C3100F5F4EB /* GameScene.sks in Resources */,
 				4E6036021B4B7C3100F5F4EB /* Main.storyboard in Resources */,
+				4E60362C1B4B7CAF00F5F4EB /* hello_button_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E6035FF1B4B7C3100F5F4EB /* GameViewController.m in Sources */,
+				4E6036241B4B7C7600F5F4EB /* MathUtils.m in Sources */,
+				4E6036261B4B7C7600F5F4EB /* SpriteSlider.m in Sources */,
+				4E6036251B4B7C7600F5F4EB /* SpriteButton.m in Sources */,
+				4E6036271B4B7C7600F5F4EB /* SpriteSliderSelector.m in Sources */,
 				4E6035F71B4B7C3100F5F4EB /* AppDelegate.m in Sources */,
 				4E6035FA1B4B7C3100F5F4EB /* GameScene.m in Sources */,
 				4E6035F41B4B7C3100F5F4EB /* main.m in Sources */,

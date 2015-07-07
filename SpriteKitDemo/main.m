@@ -1,8 +1,8 @@
 //
 //  main.m
-//  SpriteKitDemo
+//  Blog
 //
-//  Created by Rich Halliday on 2015-07-06.
+//  Created by Rich Halliday on 2015-05-28.
 //  Copyright (c) 2015 Factor[e]. All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
 //  GameViewController.m
-//  SpriteKitDemo
+//  Blog
 //
-//  Created by Rich Halliday on 2015-07-06.
+//  Created by Rich Halliday on 2015-05-28.
 //  Copyright (c) 2015 Factor[e]. All rights reserved.
 //
 
@@ -30,6 +30,18 @@
 
 @implementation GameViewController
 
+- (void)viewWillLayoutSubviews
+{
+    GameScene *newScene;
+    SKView * skView = (SKView *)self.view;
+
+    newScene = [[GameScene alloc] initWithSize: CGSizeMake(skView.bounds.size.width, skView.bounds.size.height)];
+
+    newScene.scaleMode = SKSceneScaleModeAspectFill;
+    [skView presentScene:newScene transition:nil];
+}
+
+/*
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,7 +50,6 @@
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
-    /* Sprite Kit applies additional optimizations to improve rendering performance */
     skView.ignoresSiblingOrder = YES;
     
     // Create and configure the scene.
@@ -48,6 +59,7 @@
     // Present the scene.
     [skView presentScene:scene];
 }
+*/
 
 - (BOOL)shouldAutorotate
 {

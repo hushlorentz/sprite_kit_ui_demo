@@ -1,6 +1,6 @@
 //
 //  GameScene.h
-//  SpriteKitDemo
+//  Blog
 //
 
 //  Copyright (c) 2015 Factor[e]. All rights reserved.

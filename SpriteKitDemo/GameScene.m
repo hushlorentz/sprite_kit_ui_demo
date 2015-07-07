@@ -1,49 +1,44 @@
 //
 //  GameScene.m
-//  SpriteKitDemo
+//  Blog
 //
-//  Created by Rich Halliday on 2015-07-06.
+//  Created by Rich Halliday on 2015-05-28.
 //  Copyright (c) 2015 Factor[e]. All rights reserved.
 //
 
 #import "GameScene.h"
+#import "SpriteButton.h"
+#import "SpriteSlider.h"
 
 @implementation GameScene
 
--(void)didMoveToView:(SKView *)view {
-    /* Setup your scene here */
-    SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+-(void)didMoveToView:(SKView *)view
+{
+    SpriteButton *helloButton = [[SpriteButton alloc] initWithUnselectedImageNamed:@"hello_button" selectedImageNamed:@"hello_button_selected"];
+    helloButton.callback = [self foo];
+    helloButton.position = CGPointMake(self.view.frame.size.width / 2, 0.33 * self.view.frame.size.height);
+    helloButton.zPosition = 1;
+   
+    [self addChild:helloButton];
+
+    SpriteSlider *slider = [[SpriteSlider alloc] initWithMin: 0 max: 100 initial: 50 sliderBarImageNamed:@"slider_bar" width: self.view.frame.size.width - 50 andSelectorNamed:@"slider_selector"];
+    slider.position = CGPointMake(self.view.frame.size.width / 2 + slider.frame.size.width, 0.66 * self.view.frame.size.height);
+    slider.callback = [self bar];
     
-    myLabel.text = @"Hello, World!";
-    myLabel.fontSize = 65;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
-    
-    [self addChild:myLabel];
+    [self addChild:slider];
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
-    
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.xScale = 0.5;
-        sprite.yScale = 0.5;
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
+- (void(^)())foo
+{
+    return ^(){ NSLog(@"Hello, World!"); };
 }
 
--(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+- (SliderCallback)bar
+{
+    return ^(SpriteSlider *slider)
+    {
+        NSLog(@"Current Value: %f", slider.currentValue);
+    };
 }
 
 @end
